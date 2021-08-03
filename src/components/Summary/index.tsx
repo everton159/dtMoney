@@ -49,7 +49,7 @@ export function Summary(){
               currency: 'BRL'
             }).format(summary.withdraws)}</strong>
       </div>
-      <div className="highlight-background">
+      <div className={summary.total >=0 ?"highlight-positive" : "highlight-negative"}>
         <header>
           <p>Total</p>
           <img src={totalImg} alt="Total" />
